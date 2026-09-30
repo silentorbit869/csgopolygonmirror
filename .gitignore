@@ -1,0 +1,20 @@
+brief/
+brand-consensus*
+entity-analysis*
+*.tz.md
+*.stitch-design.md
+structure.md
+texts/
+images/reference.png
+README.md
+node_modules/
+.DS_Store
+Thumbs.db
+
+# local tooling
+.wrangler/
+.claude/
+
+# Custom domain: keep out of the repo until csgopolygonmirror.com is delegated,
+# otherwise GitHub Pages switches to it and the *.github.io preview stops working.
+CNAME

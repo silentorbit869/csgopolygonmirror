@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <defs>
+    <linearGradient id="chrome" x1="18%" y1="4%" x2="82%" y2="96%">
+      <stop offset="0" stop-color="#E8FFF6"/>
+      <stop offset="0.28" stop-color="#3DFBBE"/>
+      <stop offset="0.58" stop-color="#0FB47F"/>
+      <stop offset="0.82" stop-color="#0A3B33"/>
+      <stop offset="1" stop-color="#02110F"/>
+    </linearGradient>
+    <linearGradient id="chrome-soft" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0" stop-color="#F4FFFB"/>
+      <stop offset="0.35" stop-color="#9CFFE0"/>
+      <stop offset="0.7" stop-color="#0FB47F"/>
+      <stop offset="1" stop-color="#062420"/>
+    </linearGradient>
+    <linearGradient id="specular" x1="0%" y1="0%" x2="60%" y2="100%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="obj-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Shield with two mirrored half-circles: site symbol -->
+  <symbol id="obj-shield" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M60 10 L100 24 V58c0 26-17 44-40 52-23-8-40-26-40-52V24z" fill="url(#chrome)"/>
+      <path d="M60 10 L100 24 V58c0 26-17 44-40 52-23-8-40-26-40-52V24z" fill="url(#specular)"/>
+      <path d="M60 10 L100 24 V58c0 26-17 44-40 52-23-8-40-26-40-52V24z" fill="none" stroke="#E8FFF6" stroke-opacity="0.55" stroke-width="1.5"/>
+      <path d="M60 36a18 18 0 0 1 0 36z" fill="#02110F" fill-opacity="0.55"/>
+      <path d="M60 36a18 18 0 0 0 0 36z" fill="#E8FFF6" fill-opacity="0.85"/>
+      <path d="M60 30v52" stroke="#02110F" stroke-opacity="0.4" stroke-width="2"/>
+    </g>
+  </symbol>
+
+  <!-- Trophy -->
+  <symbol id="obj-trophy" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M36 20h48v22c0 15-11 26-24 26S36 57 36 42z" fill="url(#chrome)"/>
+      <path d="M36 20h48v22c0 15-11 26-24 26S36 57 36 42z" fill="url(#specular)"/>
+      <path d="M36 26H26a12 12 0 0 0 12 20M84 26h10a12 12 0 0 1-12 20" fill="none" stroke="url(#chrome-soft)" stroke-width="5" stroke-linecap="round"/>
+      <rect x="54" y="68" width="12" height="18" fill="url(#chrome-soft)"/>
+      <rect x="38" y="86" width="44" height="12" rx="4" fill="url(#chrome)"/>
+      <rect x="38" y="86" width="44" height="12" rx="4" fill="url(#specular)"/>
+    </g>
+  </symbol>
+
+  <!-- Coin -->
+  <symbol id="obj-coin" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <ellipse cx="60" cy="62" rx="38" ry="38" fill="url(#chrome)"/>
+      <ellipse cx="60" cy="58" rx="38" ry="38" fill="url(#chrome-soft)"/>
+      <ellipse cx="60" cy="58" rx="38" ry="38" fill="url(#specular)"/>
+      <ellipse cx="60" cy="58" rx="26" ry="26" fill="none" stroke="#02110F" stroke-opacity="0.35" stroke-width="2"/>
+      <path d="M60 42v32M52 50h14a7 7 0 0 1 0 14H52h16" fill="none" stroke="#02110F" stroke-opacity="0.55" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </symbol>
+
+  <!-- Case / crate -->
+  <symbol id="obj-case" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M60 18l38 18-38 18-38-18z" fill="url(#chrome-soft)"/>
+      <path d="M22 36v34l38 20V54z" fill="url(#chrome)"/>
+      <path d="M98 36v34L60 90V54z" fill="#0A3B33"/>
+      <path d="M60 18l38 18-38 18-38-18z" fill="url(#specular)"/>
+      <path d="M43 27l38 18M60 54v36" stroke="#E8FFF6" stroke-opacity="0.35" stroke-width="1.5"/>
+    </g>
+  </symbol>
+
+  <!-- Rising chart -->
+  <symbol id="obj-chart" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M22 84l22-22 16 14 26-34" fill="none" stroke="url(#chrome)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 84l22-22 16 14 26-34" fill="none" stroke="url(#specular)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M72 38h22v22" fill="none" stroke="url(#chrome-soft)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="20" y="92" width="80" height="6" rx="3" fill="url(#chrome)" opacity="0.65"/>
+    </g>
+  </symbol>
+
+  <!-- Dice -->
+  <symbol id="obj-dice" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M60 16l36 20v40L60 96 24 76V36z" fill="url(#chrome)"/>
+      <path d="M60 16l36 20-36 20-36-20z" fill="url(#chrome-soft)"/>
+      <path d="M60 16l36 20-36 20-36-20z" fill="url(#specular)"/>
+      <path d="M96 36v40L60 96V56z" fill="#02110F" fill-opacity="0.35"/>
+      <circle cx="60" cy="36" r="4" fill="#02110F" fill-opacity="0.6"/>
+      <circle cx="40" cy="62" r="3.6" fill="#E8FFF6" fill-opacity="0.75"/>
+      <circle cx="44" cy="76" r="3.6" fill="#E8FFF6" fill-opacity="0.5"/>
+      <circle cx="78" cy="66" r="3.6" fill="#E8FFF6" fill-opacity="0.4"/>
+    </g>
+  </symbol>
+
+  <!-- Chain link -->
+  <symbol id="obj-link" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <rect x="18" y="42" width="52" height="36" rx="18" fill="none" stroke="url(#chrome)" stroke-width="10"/>
+      <rect x="50" y="42" width="52" height="36" rx="18" fill="none" stroke="url(#chrome-soft)" stroke-width="10"/>
+      <rect x="18" y="42" width="52" height="36" rx="18" fill="none" stroke="url(#specular)" stroke-width="10"/>
+    </g>
+  </symbol>
+
+  <!-- Lock -->
+  <symbol id="obj-lock" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M42 50V38a18 18 0 0 1 36 0v12" fill="none" stroke="url(#chrome-soft)" stroke-width="9" stroke-linecap="round"/>
+      <rect x="28" y="50" width="64" height="50" rx="14" fill="url(#chrome)"/>
+      <rect x="28" y="50" width="64" height="50" rx="14" fill="url(#specular)"/>
+      <circle cx="60" cy="72" r="7" fill="#02110F" fill-opacity="0.6"/>
+      <path d="M60 79v10" stroke="#02110F" stroke-opacity="0.6" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </symbol>
+
+  <!-- Paper plane -->
+  <symbol id="obj-plane" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M102 22L16 56l32 12z" fill="url(#chrome-soft)"/>
+      <path d="M102 22L48 68l6 30 14-20z" fill="url(#chrome)"/>
+      <path d="M102 22L16 56l32 12z" fill="url(#specular)"/>
+      <path d="M102 22L48 68" stroke="#E8FFF6" stroke-opacity="0.5" stroke-width="1.5"/>
+    </g>
+  </symbol>
+
+  <!-- Roulette wheel -->
+  <symbol id="obj-wheel" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <circle cx="60" cy="60" r="40" fill="url(#chrome)"/>
+      <circle cx="60" cy="60" r="40" fill="url(#specular)"/>
+      <circle cx="60" cy="60" r="24" fill="#02110F" fill-opacity="0.45"/>
+      <circle cx="60" cy="60" r="9" fill="url(#chrome-soft)"/>
+      <path d="M60 20v80M20 60h80M32 32l56 56M88 32L32 88" stroke="#E8FFF6" stroke-opacity="0.3" stroke-width="2"/>
+      <circle cx="60" cy="27" r="5" fill="#E8FFF6"/>
+    </g>
+  </symbol>
+
+  <!-- Crossed swords: esports -->
+  <symbol id="obj-swords" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <path d="M26 22l44 52 12 12-6 12-16-14-44-52z" fill="url(#chrome)"/>
+      <path d="M94 22L50 74l-12 12 6 12 16-14 44-52z" fill="url(#chrome-soft)"/>
+      <path d="M26 22l44 52 12 12-6 12-16-14-44-52z" fill="url(#specular)"/>
+      <path d="M22 88l12 12M98 88L86 100" stroke="#0FB47F" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </symbol>
+
+  <!-- Abstract author avatar A -->
+  <symbol id="obj-avatar-a" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <circle cx="60" cy="60" r="44" fill="#071A1F"/>
+      <path d="M60 22a38 38 0 0 1 0 76z" fill="url(#chrome)"/>
+      <path d="M60 36a24 24 0 0 0 0 48z" fill="url(#chrome-soft)" opacity="0.85"/>
+      <circle cx="60" cy="60" r="44" fill="none" stroke="url(#chrome-soft)" stroke-width="2"/>
+      <circle cx="60" cy="60" r="10" fill="#E8FFF6" fill-opacity="0.9"/>
+    </g>
+  </symbol>
+
+  <!-- Abstract author avatar B -->
+  <symbol id="obj-avatar-b" viewBox="0 0 120 120">
+    <g filter="url(#obj-glow)">
+      <circle cx="60" cy="60" r="44" fill="#071A1F"/>
+      <path d="M26 60a34 34 0 0 1 68 0z" fill="url(#chrome-soft)"/>
+      <path d="M26 60a34 34 0 0 0 68 0z" fill="url(#chrome)" opacity="0.7"/>
+      <circle cx="60" cy="60" r="44" fill="none" stroke="url(#chrome-soft)" stroke-width="2"/>
+      <rect x="50" y="50" width="20" height="20" rx="6" fill="#E8FFF6" fill-opacity="0.85"/>
+    </g>
+  </symbol>
+</svg>
